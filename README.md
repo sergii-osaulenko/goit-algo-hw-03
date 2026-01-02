@@ -2,7 +2,7 @@
 Homework #3
 
 # Запуск з консолі, наприклад:
-python sort_files_recursive.py /path/to/source /path/to/dest
+python sort_files_recursive.py "C:/path/to/source" "C:/path/to/dest"
 
 # Або з директорією dist за замовчуванням:
-python sort_files_recursive.py /path/to/source
+python sort_files_recursive.py "C:/path/to/source"
