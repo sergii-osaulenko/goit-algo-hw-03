@@ -40,7 +40,7 @@ def main():
 
     turtle.speed(0)
     turtle.penup()
-    turtle.goto(-200, 100)  # зміщуємо фігуру в центр вікна
+    turtle.goto(-200, 100)  # Зміщуємо фігуру в центр вікна
     turtle.pendown()
 
     koch_snowflake(400, order)
