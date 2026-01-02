@@ -45,7 +45,7 @@ def copy_file_to_ext_dir(file_path: Path, dst_root: Path):
 
     target_file = target_dir / file_path.name
     try:
-        shutil.copy2(file_path, target_file)  # зберігає метадані файлу [web:4]
+        shutil.copy2(file_path, target_file)  # Зберігає метадані файлу [web:4]
         print(f"Скопійовано: {file_path} -> {target_file}")
     except (OSError, shutil.Error) as e:
         print(f"Помилка копіювання {file_path}: {e}")
@@ -65,12 +65,12 @@ def walk_and_copy(src_dir: Path, dst_root: Path):
 
     for entry in entries:
         if entry.is_dir():
-            # рекурсивний виклик для піддиректорії
+            # Рекурсивний виклик для піддиректорії
             walk_and_copy(entry, dst_root)
         elif entry.is_file():
             copy_file_to_ext_dir(entry, dst_root)
         else:
-            # наприклад, символічні лінки чи інші типи
+            # Наприклад, символічні лінки чи інші типи
             print(f"Пропущено не-файл/не-директорію: {entry}")
 
 
